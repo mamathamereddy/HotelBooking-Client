@@ -325,7 +325,7 @@ h6 {
 }
 .img-container img {
   width: 100%;
-  height:200px;
+  height:250px;
   display: block;
   transition: var(--mainTransition);
 }
@@ -367,12 +367,12 @@ h6 {
   transform: translate(-50%, -50%) scale(1);
 }
 .room-info {
-  width:20%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: scale(0);
-  transition: all 0.3s linear;;
+  background: var(--darkGrey);
+  text-transform: capitalize;
+  padding: 0.5rem 0;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: var(--mainSpacing);
 }
 /* end of room  */
 /* single room*/

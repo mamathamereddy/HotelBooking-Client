@@ -8,7 +8,7 @@ const SingleRoom = () => {
   return (
     <>
       <Hero hero="singleHero">
-        <Banner tittle="">
+        <Banner tittle="Your selected Room">
           <Link to="/home" className="btn-primary">
             Back to Home
           </Link>
