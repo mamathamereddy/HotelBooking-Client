@@ -162,6 +162,8 @@ h6 {
 /* end of navbar */
 /* Hero */
 .defaultHero,
+.singleHero,
+.errorHero,
 .roomsHero {
   min-height: calc(100vh - 66px);
   background: url("./images/defaultBcg.jpg") center/cover no-repeat;
@@ -171,6 +173,14 @@ h6 {
 }
 .roomsHero {
   background-image: url("./images/room-2.jpg");
+  min-height: 60vh;
+}
+.singleHero{
+  background-image: url("./images/room-1.jpeg");
+  min-height: 60vh;
+}
+.errorHero{
+  background-image: url("./images/error.jpg");
   min-height: 60vh;
 }
 /* End of Hero */
@@ -357,12 +367,12 @@ h6 {
   transform: translate(-50%, -50%) scale(1);
 }
 .room-info {
-  background: var(--darkGrey);
-  text-transform: capitalize;
-  padding: 0.5rem 0;
-  text-align: center;
-  font-weight: 700;
-  letter-spacing: var(--mainSpacing);
+  width:20%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: scale(0);
+  transition: all 0.3s linear;;
 }
 /* end of room  */
 /* single room*/
@@ -379,7 +389,8 @@ h6 {
   grid-column-gap: 50px;
 }
 .single-room-images img {
-  width: 100%;
+  width: 30%;
+  height:200px;
   display: block;
 }
 .single-room-info {
@@ -417,12 +428,23 @@ h6 {
   letter-spacing: var(--mainSpacing);
 }
 .extras {
-  list-style-type: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-  grid-column-gap: 2rem;
-  grid-row-gap: 1rem;
+  list-style-type:square
+  
 }
+.btn-info{
+  background-color: #008CBA; 
+  border: none;
+  color: white;
+  padding: 20px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 30rem;
+  margin-bottom: 5rem;
+  width:15%;
+}
+
 @media screen and (min-width: 992px) {
   .single-room-images,
   .single-room-info,
