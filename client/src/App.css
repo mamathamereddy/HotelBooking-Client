@@ -431,7 +431,7 @@ h6 {
   list-style-type:square
   
 }
-.btn-info{
+.btn-info,.btn-info-form{
   background-color: #008CBA; 
   border: none;
   color: white;
@@ -442,7 +442,40 @@ h6 {
   font-size: 16px;
   margin-left: 30rem;
   margin-bottom: 5rem;
-  width:15%;
+  width:25%;
+}
+.btn-info-form{
+  background-color: rgb(255, 140, 0);
+  margin-left: 5rem;
+  margin-top: 2rem;
+  width:40%;
+  padding: 10px 10px;
+}
+.bookingform{
+  display:flex;
+  flex-direction: column;
+  width: 27%;
+  margin-left:27rem;
+  margin-bottom: 1.5rem;
+  margin-top: 3.5rem;
+}
+.bookingform label{
+  margin-top: 1rem;
+}
+input{
+  padding:5px 5px;
+  
+}
+select{
+  width:100%;
+  padding: 10px;
+  font-size: medium;
+}
+.book{
+  margin-left:27rem;
+  margin-top: 3.5rem;
+  color:rgb(255, 140, 0);
+  text-decoration:u
 }
 
 @media screen and (min-width: 992px) {
