@@ -9,7 +9,7 @@ const RoomsPage = () => {
   const [rooms, setRooms] = useState([{}]);
   useEffect(() => {
     axios
-      .get("http://localhost:3000/rooms")
+      .get("https://hotel-bookingapp.herokuapp.com/rooms")
       .then((res) => setRooms(res.data))
       .catch((error) => console.log(error));
   }, []);

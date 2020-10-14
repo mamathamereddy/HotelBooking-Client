@@ -9,7 +9,7 @@ function RoomWithId() {
   const [data, setData] = useState([]);
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/rooms/${slug}`)
+      .get(`https://hotel-bookingapp.herokuapp.com/rooms/${slug}`)
       .then((res) => setData(res.data))
 
       .catch((error) => console.log(error));

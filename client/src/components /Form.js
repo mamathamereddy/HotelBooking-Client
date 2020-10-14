@@ -29,7 +29,7 @@ const BookingForm = () => {
     };
     try {
       const infoToBook = await fetch(
-        "http://localhost:3000/customers/addNewCustomer",
+        "https://hotel-bookingapp.herokuapp.com/customers/addNewCustomer",
         {
           method: "POST",
           headers: {
@@ -62,7 +62,7 @@ const BookingForm = () => {
         <h5>
           {error
             ? error
-            : "Thank you Choosing our Hotel, your booking is successful!!"}
+            : "Booking successful "}
         </h5>
       ) : (
         <>
