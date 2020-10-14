@@ -9,7 +9,7 @@ const FeaturedRooms = () => {
       .get("http://localhost:3000/rooms")
       .then((res) => setRooms(res.data))
       .catch((error) => console.log(error));
-  },[]);
+  }, []);
   return (
     <section className="featured-rooms">
       <Title title="Featured Rooms" />

@@ -1,4 +1,4 @@
-import React,{ useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Hero from "../components /Hero";
 import Banner from "../components /Banner";
 import { Link } from "react-router-dom";
@@ -12,22 +12,19 @@ const RoomsPage = () => {
       .get("http://localhost:3000/rooms")
       .then((res) => setRooms(res.data))
       .catch((error) => console.log(error));
-  },[]);
+  }, []);
   return (
     <>
-    <Hero hero="roomsHero">
-      <Banner tittle="Our Rooms">
-        <Link to="/" className="btn-primary">
-          Return Home
-        </Link>
-      </Banner>
-    </Hero>
-    <section className="featured-rooms">
-    <Rooms rooms={rooms} />
-    </section>
-      
-    
-    
+      <Hero hero="roomsHero">
+        <Banner tittle="Our Rooms">
+          <Link to="/" className="btn-primary">
+            Return Home
+          </Link>
+        </Banner>
+      </Hero>
+      <section className="featured-rooms">
+        <Rooms rooms={rooms} />
+      </section>
     </>
   );
 };

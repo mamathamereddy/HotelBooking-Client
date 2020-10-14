@@ -25,7 +25,7 @@ function RoomWithId() {
         <div className="single-room-info">
           <article className="desc">
             <h3>{data.roomtype}</h3>
-  <p>{data.description}</p>
+            <p>{data.description}</p>
           </article>
           <article className="info">
             <h3>info</h3>
@@ -36,16 +36,16 @@ function RoomWithId() {
         </div>
       </section>
       <section className="room-extras">
-          <h6>extras </h6>
-          <ul className="extras">
-            {data.utilitise?data.utilitise.map((item, index) => (
-              <li key={index}> {item}</li>
-            )):null}
-            </ul>
-        </section>
-        <Link to="/bookingForm" className="btn-info ">
-             BOOK NOW
-            </Link>
+        <h6>extras </h6>
+        <ul className="extras">
+          {data.utilitise
+            ? data.utilitise.map((item, index) => <li key={index}> {item}</li>)
+            : null}
+        </ul>
+      </section>
+      <Link to="/bookingForm" className="btn-info ">
+        BOOK NOW
+      </Link>
     </>
   );
 }

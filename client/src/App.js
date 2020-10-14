@@ -4,7 +4,7 @@ import Home from "./containers /Home";
 import Rooms from "./containers /Rooms";
 import SingleRoom from "./containers /SingleRoom";
 import Error from "./containers /Error";
-import Form from './components /Form'
+import Form from "./components /Form";
 import Navbar from "./components /Navbar";
 
 import { Switch, Route } from "react-router-dom";
@@ -24,4 +24,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
