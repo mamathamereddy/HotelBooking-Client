@@ -527,10 +527,11 @@ h5{
   color:rgb(255, 140, 0);
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 650px) {
   form.bookingform,.book,.btn-info ,h5{
-    width:50%;
+    width:40%;
     margin-left:5rem;
     
   }
 }
+
