@@ -17,7 +17,7 @@ const RoomsPage = () => {
     <>
     <Hero hero="roomsHero">
       <Banner tittle="Our Rooms">
-        <Link to="/home" className="btn-primary">
+        <Link to="/" className="btn-primary">
           Return Home
         </Link>
       </Banner>
